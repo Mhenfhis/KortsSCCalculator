@@ -6,7 +6,7 @@
 
 __all__ = [
   'AllBonusList', 'ClassList', 'RaceList', 'Races', 'Realms', 'AllRealms',
-  'ItemTypes', 'ServerCodes', 'EuroServerCodes', 'ServerIgnCodes', 
+  'ItemTypes', 'ServerCodes', 'EuroServerCodes', 'ServerIgnCodes',
 ]
 
 from tuple2 import * 
@@ -27,7 +27,7 @@ AllBonusList = {
     },
 
     'Cabalist' : {
-        'All Spell Lines' : ('Body Magic', 'Matter Magic', 'Spirit Magic',), 
+        'All Spell Lines' : ('Body Magic', 'Matter Magic', 'Spirit Magic',),
         'All Magic Skills' : ('Body Magic', 'Matter Magic', 'Spirit Magic',),
         'Races' : t2(('Avalonian', 'Briton', 'Half Ogre', 'Inconnu', 'Saracen',)),
         'Acuity' : ('Intelligence',),
@@ -43,7 +43,7 @@ AllBonusList = {
         'All Magic Skills' : ('Rejuvenation', 'Enhancement',),
         'All Melee Weapon Skills' : ('Staff',),
         'Other Skills' : ('Parry',),
-        'Races' : t2(('Briton',)),
+        'Races' : t2(('Avalonian', 'Briton', 'Highlander',)),
         'Acuity' : ('Piety',),
     },
 
@@ -65,7 +65,7 @@ AllBonusList = {
     'Mauler' : {
         'All Magic Skills' : ('Aura Manipulation', 'Magnetism', 'Power Strikes',),
         'All Melee Weapon Skills' : ('Fist Wraps', 'Mauler Staff',),
-        'Races' : t2(('Briton', 'Korazh',)),
+        'Races' : t2(('Briton', 'Half Ogre', 'Korazh',)),
 #       no bonus from 'Acuity' : ('Strength',),
     },
 
@@ -80,14 +80,14 @@ AllBonusList = {
         'All Magic Skills' : ('Instruments',),
         'All Melee Weapon Skills' : ('Slash', 'Thrust',),
         'Other Skills' : ('Stealth',),
-        'Races' : t2(('Briton', 'Highlander', 'Saracen',)),
+        'Races' : t2(('Briton', 'Highlander', 'Inconnu', 'Saracen',)),
         'Acuity' : ('Charisma',),
     },
 
     'Necromancer' : {
-        'All Spell Lines' : ('Deathsight', 'Death Servant', 'Painworking',), 
+        'All Spell Lines' : ('Deathsight', 'Death Servant', 'Painworking',),
         'All Magic Skills' : ('Deathsight', 'Death Servant', 'Painworking',),
-        'Races' : t2(('Briton', 'Inconnu', 'Saracen',)),
+        'Races' : t2(('Avalonian', 'Briton', 'Inconnu', 'Saracen',)),
         'Acuity' : ('Intelligence',),
     },
 
@@ -103,7 +103,7 @@ AllBonusList = {
         'All Magic Skills' : ('Soulrending',),
         'All Melee Weapon Skills' : ('Crush', 'Flexible', 'Slash', 'Thrust',),
         'Other Skills' : ('Parry', 'Shield',),
-        'Races' : t2(('Briton', 'Inconnu', 'Saracen',)),
+        'Races' : t2(('Briton', 'Inconnu', 'Korazh', 'Saracen',)),
         'Acuity' : ('Piety',),
     },
 
@@ -131,7 +131,7 @@ AllBonusList = {
     'Wizard' : {
         'All Spell Lines' : ('Earth Magic', 'Cold Magic', 'Fire Magic',),
         'All Magic Skills' : ('Earth Magic', 'Cold Magic', 'Fire Magic',),
-        'Races' : t2(('Avalonian', 'Briton', 'Half Ogre',)),
+        'Races' : t2(('Avalonian', 'Briton', 'Half Ogre', 'Inconnu',)),
         'Acuity' : ('Intelligence',),
     },
   },
@@ -141,7 +141,7 @@ AllBonusList = {
     'Animist' : {
         'All Spell Lines' : ('Arboreal Path', 'Creeping Path', 'Verdant Path',),
         'All Magic Skills' : ('Arboreal Path', 'Creeping Path', 'Verdant Path',),
-        'Races' : t2(('Celt', 'Firbolg', 'Sylvan',)),
+        'Races' : t2(('Celt', 'Elf', 'Firbolg', 'Sylvan',)),
         'Acuity' : ('Intelligence',),
     },
 
@@ -163,14 +163,14 @@ AllBonusList = {
         'All Melee Weapon Skills' : ('Blades', 'Blunt', 'Piercing',),
         'All Dual Wield Skills' : ('Celtic Dual',),
         'Other Skills' : ('Parry', 'Shield',),
-        'Races' : t2(('Celt', 'Elf', 'Firbolg', 'Graoch', 'Shar',)),
+        'Races' : t2(('Celt', 'Elf', 'Firbolg', 'Graoch', 'Lurikeen', 'Shar',)),
     },
 
     'Champion' : {
         'All Magic Skills' : ('Valor',),
         'All Melee Weapon Skills' : ('Blades', 'Blunt', 'Piercing', 'Large Weaponry',),
         'Other Skills' : ('Parry', 'Shield',),
-        'Races' : t2(('Celt', 'Elf', 'Lurikeen', 'Shar',)),
+        'Races' : t2(('Celt', 'Elf', 'Lurikeen', 'Shar', 'Sylvan',)),
         'Acuity' : ('Intelligence',),
     },
 
@@ -197,7 +197,7 @@ AllBonusList = {
     'Mauler' : {
         'All Magic Skills' : ('Aura Manipulation', 'Magnetism', 'Power Strikes',),
         'All Melee Weapon Skills' : ('Fist Wraps', 'Mauler Staff',),
-        'Races' : t2(('Celt', 'Graoch',)),
+        'Races' : t2(('Celt', 'Graoch', 'Lurikeen',)),
 #       no bonus from 'Acuity' : ('Strength',),
     },
 
@@ -218,7 +218,7 @@ AllBonusList = {
         'All Melee Weapon Skills' : ('Blades', 'Piercing',),
         'All Dual Wield Skills' : ('Celtic Dual',),
         'Other Skills' : ('Critical Strike', 'Envenom', 'Stealth',),
-        'Races' : t2(('Elf', 'Lurikeen',)),
+        'Races' : t2(('Celt', 'Elf', 'Lurikeen',)),
     },
 
     'Ranger' : {
@@ -233,7 +233,7 @@ AllBonusList = {
         'All Magic Skills' : ('Arboreal Path',),
         'All Melee Weapon Skills' : ('Scythe',),
         'Other Skills' : ('Parry',),
-        'Races' : t2(('Celt', 'Firbolg', 'Sylvan',)),
+        'Races' : t2(('Celt', 'Firbolg', 'Graoch', 'Sylvan',)),
         'Acuity' : ('Intelligence',),
     },
 
@@ -247,7 +247,7 @@ AllBonusList = {
         'All Magic Skills' : ('Nurture', 'Regrowth',),
         'All Melee Weapon Skills' : ('Blades', 'Blunt',),
         'Other Skills' : ('Parry', 'Shield',),
-        'Races' : t2(('Celt', 'Firbolg', 'Graoch', 'Sylvan',)),
+        'Races' : t2(('Celt', 'Firbolg', 'Graoch', 'Shar', 'Sylvan',)),
         'Acuity' : ('Empathy',),
     },
   },
@@ -258,7 +258,7 @@ AllBonusList = {
         'All Melee Weapon Skills' : ('Axe', 'Hammer', 'Sword',),
         'All Dual Wield Skills' : ('Left Axe',),
         'Other Skills' : ('Parry',),
-        'Races' : t2(('Deifrang', 'Dwarf', 'Norseman', 'Troll', 'Valkyn',)),
+        'Races' : t2(('Deifrang', 'Dwarf', 'Kobold', 'Norseman', 'Troll', 'Valkyn',)),
     },
 
     'Bonedancer' : {
@@ -286,7 +286,7 @@ AllBonusList = {
     'Mauler' : {
         'All Magic Skills' : ('Aura Manipulation', 'Magnetism', 'Power Strikes',),
         'All Melee Weapon Skills' : ('Fist Wraps', 'Mauler Staff',),
-        'Races' : t2(('Norseman', 'Deifrang',)),
+        'Races' : t2(('Kobold', 'Norseman', 'Deifrang',)),
 #       no bonus from 'Acuity' : ('Strength',),
     },
 
@@ -308,12 +308,12 @@ AllBonusList = {
         'All Melee Weapon Skills' : ('Sword', 'Axe',),
         'All Dual Wield Skills' : ('Left Axe',),
         'Other Skills' : ('Critical Strike', 'Envenom', 'Stealth',),
-        'Races' : t2(('Kobold', 'Norseman', 'Valkyn',)),
+        'Races' : t2(('Frostalf', 'Kobold', 'Norseman', 'Valkyn',)),
     },
 
     'Shaman' : {
         'All Magic Skills' : ('Augmentation', 'Cave Magic', 'Mending',),
-        'Races' : t2(('Frostalf', 'Kobold', 'Troll',)),
+        'Races' : t2(('Dwarf', 'Frostalf', 'Kobold', 'Troll',)),
         'Acuity' : ('Piety',),
     },
 
@@ -321,7 +321,7 @@ AllBonusList = {
         'All Magic Skills' : ('Battlesongs',),
         'All Melee Weapon Skills' : ('Sword', 'Hammer', 'Axe',),
         'Other Skills' : ('Parry',),
-        'Races' : t2(('Dwarf', 'Kobold', 'Norseman', 'Troll',)),
+        'Races' : t2(('Deifrang', 'Dwarf', 'Kobold', 'Frostalf', 'Norseman', 'Troll',)),
         'Acuity' : ('Charisma',),
     },
 
@@ -336,7 +336,7 @@ AllBonusList = {
         'All Magic Skills' : ('Stormcalling',),
         'All Melee Weapon Skills' : ('Sword', 'Hammer', 'Axe',),
         'Other Skills' : ('Parry', 'Shield',),
-        'Races' : t2(('Deifrang', 'Dwarf', 'Frostalf', 'Norseman', 'Troll',)),
+        'Races' : t2(('Deifrang', 'Dwarf', 'Frostalf', 'Norseman', 'Troll', 'Valkyn',)),
         'Acuity' : ('Piety',),
     },
 
@@ -352,7 +352,7 @@ AllBonusList = {
         'All Spell Lines' : ('Cursing',),
         'All Magic Skills' : ('Cursing', 'Hexing',),
         'No Skill Effect' : ('Witchcraft',),
-        'Races' : t2(('Frostalf', 'Kobold', 'Norseman',)),
+        'Races' : t2(('Frostalf', 'Kobold', 'Norseman', 'Troll',)),
         'Acuity' : ('Piety',),
     },
 
@@ -362,7 +362,7 @@ AllBonusList = {
         'No Skill Effect' : ('Thrown Weapons',),
         'Races' : t2(('Deifrang', 'Dwarf', 'Kobold', 'Norseman', 'Troll', 'Valkyn',)),
     },
-  }, 
+  },
 }
 
 
@@ -384,23 +384,23 @@ for realm in Realms:
   for charclass in AllBonusList[realm]:
     skills = []
     for listname in ('All Magic Skills', 'All Melee Weapon Skills',
-                     'All Dual Wield Skills', 'All Archery Skills', 
-                     'Other Skills', ):
+                     'All Dual Wield Skills', 'All Archery Skills',
+                     'Other Skills',):
         if not AllBonusList[realm][charclass].has_key(listname):
             AllBonusList[realm][charclass][listname] = ()
         skills.extend(AllBonusList[realm][charclass][listname])
 
     AllBonusList[realm][charclass]['Skills Hash'] = d2(dict.fromkeys(skills))
 
-    for listname in ('All Spell Lines', 'No Skill Effect', 'Acuity', ):
+    for listname in ('All Spell Lines', 'No Skill Effect', 'Acuity',):
         if not AllBonusList[realm][charclass].has_key(listname):
             AllBonusList[realm][charclass][listname] = ()
 
     AllBonusList[realm][charclass]['Focus Hash'] \
-        = d2(dict.fromkeys(AllBonusList[realm][charclass]['All Spell Lines']))
+ = d2(dict.fromkeys(AllBonusList[realm][charclass]['All Spell Lines']))
 
     if len(AllBonusList[realm][charclass]['All Spell Lines']):
-      AllBonusList[realm][charclass]['All Focus'] = t2(('All Spell Lines',) +
+      AllBonusList[realm][charclass]['All Focus'] = t2(('All Spell Lines',) + 
                          AllBonusList[realm][charclass]['All Spell Lines'])
     else:
       AllBonusList[realm][charclass]['All Focus'] = t2()
@@ -417,8 +417,8 @@ for realm in Realms:
   ClassList['All'].extend(ClassList[realm])
 ClassList['All'].sort()
 i = ClassList['All'].index('Mauler')
-while ClassList['All'][i+1] == 'Mauler':
-    del ClassList['All'][i+1]
+while ClassList['All'][i + 1] == 'Mauler':
+    del ClassList['All'][i + 1]
 ClassList['All'] = t2(ClassList['All'])
 ClassList = d2(ClassList)
 
@@ -551,7 +551,7 @@ armorTypes = d2({
     'Albion':   t2(('Cloth', 'Leather', 'Studded', 'Chain', 'Plate',)),
     'Hibernia': t2(('Cloth', 'Leather', 'Reinforced', 'Scale',)),
     'Midgard':  t2(('Cloth', 'Leather', 'Studded', 'Chain',)),
-    'All':      t2(('Cloth', 'Leather', 'Studded', 'Reinforced', 
+    'All':      t2(('Cloth', 'Leather', 'Studded', 'Reinforced',
                     'Chain', 'Scale', 'Plate',)),
 })
 
@@ -559,22 +559,22 @@ righthandTypes = d2({
     'Albion':   t2(('Slash', 'Crush', 'Thrust', 'Flex', 'Fist Wraps',)),
     'Hibernia': t2(('Blade', 'Blunt', 'Piercing', 'Fist Wraps',)),
     'Midgard':  t2(('Axe', 'Hammer', 'Sword', 'Hand to Hand', 'Fist Wraps',)),
-    'All':      t2(('Slash', 'Blade', 'Sword', 'Axe', 
-                    'Crush', 'Blunt', 'Hammer', 
-                    'Thrust', 'Piercing', 'Flex', 
+    'All':      t2(('Slash', 'Blade', 'Sword', 'Axe',
+                    'Crush', 'Blunt', 'Hammer',
+                    'Thrust', 'Piercing', 'Flex',
                     'Hand to Hand', 'Fist Wraps',)),
 })
        
 shields = ('Small Shield', 'Medium Shield', 'Large Shield',)
 
 lefthandTypes = d2({
-    'Albion':   t2(righthandTypes['Albion']   + shields),
+    'Albion':   t2(righthandTypes['Albion'] + shields),
     'Hibernia': t2(righthandTypes['Hibernia'] + shields),
-    'Midgard':  t2(righthandTypes['Midgard']  + shields),
-    'All':      t2(righthandTypes['All']      + shields),
+    'Midgard':  t2(righthandTypes['Midgard'] + shields),
+    'All':      t2(righthandTypes['All'] + shields),
 })
 
-staves = ('Mauler Staff', 'Staff', )
+staves = ('Mauler Staff', 'Staff',)
 
 instruments = ('Drum', 'Flute', 'Lute', 'Harp')
 
@@ -588,31 +588,31 @@ twohandTypes = d2({
     'Midgard':  t2(righthandTypes['Midgard']
                     + ('Spear',) + staves),
     'All':      t2(righthandTypes['All']
-                    + ('Two-Handed', 'Large Weapon', 
-                       'Polearm', 'Celtic Spear', 
-                       'Axe', 'Hammer', 'Sword', 'Spear', 'Scythe', 
-                       'Quarterstaff', ) + staves + instruments),
+                    + ('Two-Handed', 'Large Weapon',
+                       'Polearm', 'Celtic Spear',
+                       'Axe', 'Hammer', 'Sword', 'Spear', 'Scythe',
+                       'Quarterstaff',) + staves + instruments),
 })
 
 rangedTypes = d2({
     'Albion':   t2(('Bow', 'Crossbow', 'Longbow',) + instruments),
     'Hibernia': t2(('Bow', 'Recurve Bow',) + instruments),
     'Midgard':  t2(('Bow', 'Composite Bow',)),
-    'All':      t2(('Bow', 'Composite Bow', 'Crossbow', 'Longbow', 
+    'All':      t2(('Bow', 'Composite Bow', 'Crossbow', 'Longbow',
                     'Recurve Bow',) + instruments),
 })
 
-spares = ('Belt', 'Cloak', 'Jewelry', 'Necklass', 
+spares = ('Belt', 'Cloak', 'Jewelry', 'Necklass',
           'Ring', 'Wrist', 'Mythirian',)
 
 spareTypes = d2({
-    'Albion':   t2(twohandTypes['Albion']   + rangedTypes['Albion'][:-4]
+    'Albion':   t2(twohandTypes['Albion'] + rangedTypes['Albion'][:-4]
                     + shields + spares),
     'Hibernia': t2(twohandTypes['Hibernia'] + rangedTypes['Hibernia'][:-4]
                     + shields + spares),
-    'Midgard':  t2(twohandTypes['Midgard']  + rangedTypes['Midgard']
+    'Midgard':  t2(twohandTypes['Midgard'] + rangedTypes['Midgard']
                     + shields + spares),
-    'All':      t2(twohandTypes['All']      + rangedTypes['All'][:-4]
+    'All':      t2(twohandTypes['All'] + rangedTypes['All'][:-4]
                     + shields + spares),
 })
 
@@ -646,7 +646,7 @@ ItemTypes = d2({
 # so .ign server numbers are shared across servers now.
 #
 ServerIgnCodes = d2({
-    'Akatsuki' :       '80', 
+    'Akatsuki' :       '80',
     'Bedevere' :       '85',
     'Bors' :          '100',
     'Ector' :          '27',
@@ -676,7 +676,7 @@ ServerIgnCodes = d2({
 #
 ServerCodes = d2({
 
-     '35' : 'Akatsuki', 
+     '35' : 'Akatsuki',
      '16' : 'Bedevere',
      '19' : 'Bors',
      '34' : 'Ector',
@@ -702,7 +702,7 @@ ServerCodes = d2({
      '27' : 'Tristan',
 })
 
-#Euro
+# Euro
 EuroServerCodes = d2({
      '18' : 'Glastonbury',
      '19' : 'Salisbury',
@@ -726,8 +726,8 @@ EuroServerCodes = d2({
 
 if __name__ == "__main__":
     pass
-    #import gnosis.xml.pickle
-    #constants = {}
-    #for v in __all__:
+    # import gnosis.xml.pickle
+    # constants = {}
+    # for v in __all__:
     #    constants[v] = locals()[v]
-    #print gnosis.xml.pickle.dumps(constants)
+    # print gnosis.xml.pickle.dumps(constants)
